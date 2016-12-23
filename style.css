@@ -1,0 +1,144 @@
+/*
+ Theme Name:   Storefront Child
+ Theme URI:    http://copyquality.com/mocksites/demotech/
+ Description:  Storefront Child Theme
+ Author:       Quality Business Solutions
+ Author URI:   http://copyquality.com
+ Template:     storefront
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, left-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  storefront-child
+*/
+
+@media (min-width: 768px){
+	.woocommerce-active #woocommerce-product-search-field {
+		border-radius: 50px;
+	}
+	
+	.site-header-cart .cart-contents:after {
+		content: "\f07a";
+	}
+	
+	.storefront-primary-navigation {
+		background: rgba(0,0,0,0.5);
+	}
+	
+	.custom-home-template .content-area {
+		width: 100% !important;
+	}
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+input[type="password"] {
+	border-radius: 5px;
+}
+
+button.single_add_to_cart_button, 
+.add_to_cart_button,
+input[type="submit"],
+.checkout-button,
+button.menu-toggle,
+.button.wc-backward,
+.added_to_cart.wc-forward,
+.price_slider_wrapper button.button {
+	border-radius: 50px;
+}
+
+.newsletter-form input[type="text"] {
+	border-top-left-radius: 50px;
+	border-bottom-left-radius: 50px;
+}
+
+.newsletter-form input[type="submit"] {
+	border-top-right-radius: 50px;
+	border-bottom-right-radius: 50px;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.main-navigation ul li a:before {
+	content: none;
+}
+
+.storefront-handheld-footer-bar ul li.cart>a:before,
+.woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--orders a:before {
+	content: "\f07a";
+}
+
+p.create-account {
+	font-size: 110%;
+	background-color: #ff6c00;
+	padding: 10px;
+	border-radius: 50px;
+	color: #fff;
+}
+
+.create-account input[type="checkbox"] {
+	margin-left: 20px;
+}
+
+.site-footer {
+	padding-bottom: 0;
+}
+
+.site-info {
+	padding: 1em 0;
+}
+
+.custom-home-template h1.entry-title {
+	display: none;
+}
+
+.widget {
+	margin: 0 0 1.5em !important;
+}
+
+.home.blog .site-header, .home.page:not(.page-template-template-homepage) .site-header, .home.post-type-archive-product .site-header, .no-wc-breadcrumb .site-header {
+	margin-bottom: 10px !important;
+}
+
+.coupon-banner {
+ min-height: 50px;	
+ overflow: hidden;
+ position: relative;
+	background: #ff6c00;
+}
+.coupon-banner p {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 50px;
+ font-size: 18px;
+ color: #fff;
+ text-align: left;
+ /* Apply animation to this element */	
+ -moz-animation: coupon-banner 5s linear infinite alternate;
+ -webkit-animation: coupon-banner 5s linear infinite alternate;
+ animation: coupon-banner 5s linear infinite alternate;
+}
+/* Move it (define the animation) */
+@-moz-keyframes coupon-banner {
+ 0%   { -moz-transform: translateX(70%); }
+ 100% { -moz-transform: translateX(0%); }
+}
+@-webkit-keyframes coupon-banner {
+ 0%   { -webkit-transform: translateX(70%); }
+ 100% { -webkit-transform: translateX(0%); }
+}
+@keyframes coupon-banner {
+ 0%   { 
+ -moz-transform: translateX(70%); /* Firefox bug fix */
+ -webkit-transform: translateX(70%); /* Firefox bug fix */
+ transform: translateX(70%); 		
+ }
+ 100% { 
+ -moz-transform: translateX(0%); /* Firefox bug fix */
+ -webkit-transform: translateX(0%); /* Firefox bug fix */
+ transform: translateX(0%); 
+ }
+}
