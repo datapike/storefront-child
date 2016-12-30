@@ -101,6 +101,28 @@ p.create-account {
 	margin-bottom: 10px !important;
 }
 
+a:focus, .button:focus, .button.alt:focus, .button.added_to_cart:focus, .button.wc-forward:focus, button:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus {
+	outline: none;
+	outline-color: 0;
+}
+
+.added_to_cart:focus, .button:focus, button:focus, input[type=button]:focus, input[type=reset]:focus, input[type=submit]:focus {
+	outline-color: rgba(0,0,0,0);
+	outline-style: none;
+	outline-width: 0;
+	outline: none;
+}
+
+.widget .widget-title, 
+.widget .widgettitle {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+input[type=search] {
+	border-radius: 50px;
+}
+
 .coupon-banner {
  min-height: 50px;	
  overflow: hidden;
